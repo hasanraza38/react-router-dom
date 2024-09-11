@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
 <>
-<div className="navbar bg-base-100">
+<div className="navbar  bg-yellow-300 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,23 +25,23 @@ const Navbar = () => {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
         <li><Link to="">Home</Link></li>
+      <li><Link to="products">Products</Link></li>
       <li><Link to="about">About</Link></li>
       <li><Link to="contact">Contact</Link></li>
-      <li><Link to="services">Sevices</Link></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+    <a className="btn btn-ghost text-2xl">Shop.</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><Link to="home">Home</Link></li>
-      <li><Link to="about">About</Link></li>
-      <li><Link to="contact">Contact</Link></li>
-      <li><Link to="services">Sevices</Link></li>
+      <li className='font-semibold'><Link to="">Home</Link></li>
+      <li className='font-semibold'><Link to="products">Products</Link></li>
+      <li className='font-semibold'><Link to="about">About</Link></li>
+      <li className='font-semibold'><Link to="contact">Contact</Link></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <a className="btn px-6">Buy</a>
   </div>
 </div>
 </>

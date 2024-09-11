@@ -4,8 +4,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './layout.jsx'
 import Home from './screens/home.jsx'
 import About from './screens/about.jsx'
-import Services from './screens/services.jsx'
 import Contact from './screens/contact.jsx'
+import Products from './screens/products.jsx'
 
 const router= createBrowserRouter([
   {
@@ -13,8 +13,12 @@ const router= createBrowserRouter([
     element:<Layout/>,
     children:[
       {
-        path:"home",
+        path:"",
         element:<Home/>
+      },
+      {
+        path:'products',
+        element:<Products/>
       },
       {
         path:"about",
@@ -34,10 +38,7 @@ const router= createBrowserRouter([
           },
         ]
       },
-      {
-        path:'services',
-        element:<Services/>
-      },
+      
       {
         path:"contact",
         element:<Contact/>
